@@ -35,8 +35,11 @@ void Map::Print()
 void Map::CopyCurrentMapANDRemoveCurrentMap()
 {
 	*lastMap = *currentMap;
-	currentMap->clear();
-	currentMap = new std::vector<std::vector<std::string>>(YSIZE, std::vector<std::string>(XSIZE, "  "));
+
+	for (auto& col : *currentMap)
+		for	(auto& str : col)
+			str = "  ";
+		
 }
 
 std::vector<Position> Map::ModifiedMap()

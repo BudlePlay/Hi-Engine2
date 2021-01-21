@@ -119,5 +119,8 @@
     <ClInclude Include="Engine\include\Input.h">
       <Filter>Source\Engine\Include</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectSetting.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

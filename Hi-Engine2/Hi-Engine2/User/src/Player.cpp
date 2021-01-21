@@ -16,15 +16,17 @@ Player::Player(const FPosition& p, const std::string& name, const std::string& s
 	prev_position_ = p;
 
 	
-	input_->BindAction(EInputEvent::IE_Pressed, this, [=]() {
+	input_->BindAction("Attack", EInputEvent::IE_Pressed, this, [=]() {
 		this->attack();
 	});
+
+	
 
 	attack_cnt_ = 0;
 }
 
 void Player::Work()
-{
+{  
 	(*input_)();
 	int data = IORaspberryPi::get_joy();
 	int pressed_key;
@@ -73,4 +75,5 @@ void Player::attack()
 	attack_cnt_++;
 
 	control(RIGHT);
+
 }

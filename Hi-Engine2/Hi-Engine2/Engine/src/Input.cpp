@@ -1,5 +1,6 @@
 #include "../include/Input.h"
 
+#include "../../ProjectSetting.h"
 #include <conio.h>
 
 
@@ -7,21 +8,19 @@ Input::Input()
 {
 }
 
-void Input::BindAction(EInputEvent KeyEvent, Object* object, const std::function<void()>& func)
+void Input::BindAction(std::string name, EInputEvent KeyEvent, Object* object, const std::function<void()>& func)
 {
+	input_map_.insert(std::make_pair(name, func));
 	this->object_ = object;
 	this->func_ = func;
 }
 
-bool Input::operator()() const
+void Input::operator()() const
 {
 	if (_kbhit())
 	{
 		int pressed_key = _getch();
-
+		
 		func_();
-		return true;
 	}
-
-	return true;
 }

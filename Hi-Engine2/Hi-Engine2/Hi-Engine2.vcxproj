@@ -169,6 +169,7 @@
     <ClInclude Include="Engine\include\Tools.h" />
     <ClInclude Include="Engine\include\Unit.h" />
     <ClInclude Include="Engine\include\WorldOutliner.h" />
+    <ClInclude Include="ProjectSetting.h" />
     <ClInclude Include="User\include\Player.h" />
     <ClInclude Include="User\include\TestScene.h" />
     <ClInclude Include="User\include\Wall.h" />

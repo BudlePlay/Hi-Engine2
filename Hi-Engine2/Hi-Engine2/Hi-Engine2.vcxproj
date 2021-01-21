@@ -88,10 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="Engine\src\BasicScene.cpp" />
     <ClCompile Include="Engine\src\EngineManager.cpp" />
+    <ClCompile Include="Engine\src\Input.cpp" />
     <ClCompile Include="Engine\src\IORaspberryPi.cpp" />
     <ClCompile Include="Engine\src\Map.cpp" />
     <ClCompile Include="Engine\src\Object.cpp" />
@@ -157,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h" />
     <ClInclude Include="Engine\include\EngineManager.h" />
+    <ClInclude Include="Engine\include\Input.h" />
     <ClInclude Include="Engine\include\IORaspberryPi.h" />
     <ClInclude Include="Engine\include\Map.h" />
     <ClInclude Include="Engine\include\Object.h" />

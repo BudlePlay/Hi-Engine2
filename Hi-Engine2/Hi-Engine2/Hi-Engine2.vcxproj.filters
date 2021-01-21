@@ -72,6 +72,9 @@
     <ClCompile Include="User\src\Wall.cpp">
       <Filter>Source\User\Src</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\src\Input.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h">
@@ -112,6 +115,9 @@
     </ClInclude>
     <ClInclude Include="User\include\Wall.h">
       <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Input.h">
+      <Filter>Source\Engine\Include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

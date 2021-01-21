@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{bcfc584f-9ac4-45fd-9b4f-d033fc371120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Src">
+      <UniqueIdentifier>{c77791dd-87aa-4413-ada4-468cb2a59297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\User">
+      <UniqueIdentifier>{435a6de3-c698-4329-88b1-b5d0219b82bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\User\Src">
+      <UniqueIdentifier>{0f149990-22ec-44d5-bb3e-41714f8ab271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\User\Include">
+      <UniqueIdentifier>{d55afb2d-f941-4faf-baa7-8e94ce1f01f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hi-Engine2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\BasicScene.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\EngineManager.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\IORaspberryPi.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\Map.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\Object.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\SceneManager.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\Time.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\Tools.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\Unit.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\src\WorldOutliner.cpp">
+      <Filter>Source\Engine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\src\Player.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\src\TestScene.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\src\Wall.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\include\BasicScene.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\EngineManager.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\IORaspberryPi.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Map.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Object.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\SceneManager.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Time.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Tools.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\Unit.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\include\WorldOutliner.h">
+      <Filter>Source\Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\Player.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\TestScene.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\Wall.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

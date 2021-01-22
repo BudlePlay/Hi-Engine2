@@ -88,10 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="Engine\src\BasicScene.cpp" />
     <ClCompile Include="Engine\src\EngineManager.cpp" />
+    <ClCompile Include="Engine\src\Input.cpp" />
     <ClCompile Include="Engine\src\IORaspberryPi.cpp" />
     <ClCompile Include="Engine\src\Map.cpp" />
     <ClCompile Include="Engine\src\Object.cpp" />
@@ -150,6 +153,7 @@
     <ClCompile Include="Engine\src\Unit.cpp" />
     <ClCompile Include="Engine\src\WorldOutliner.cpp" />
     <ClCompile Include="Hi-Engine2.cpp" />
+    <ClCompile Include="ProjectSetting.cpp" />
     <ClCompile Include="User\src\Player.cpp" />
     <ClCompile Include="User\src\TestScene.cpp" />
     <ClCompile Include="User\src\Wall.cpp" />
@@ -157,6 +161,7 @@
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h" />
     <ClInclude Include="Engine\include\EngineManager.h" />
+    <ClInclude Include="Engine\include\Input.h" />
     <ClInclude Include="Engine\include\IORaspberryPi.h" />
     <ClInclude Include="Engine\include\Map.h" />
     <ClInclude Include="Engine\include\Object.h" />
@@ -165,6 +170,7 @@
     <ClInclude Include="Engine\include\Tools.h" />
     <ClInclude Include="Engine\include\Unit.h" />
     <ClInclude Include="Engine\include\WorldOutliner.h" />
+    <ClInclude Include="ProjectSetting.h" />
     <ClInclude Include="User\include\Player.h" />
     <ClInclude Include="User\include\TestScene.h" />
     <ClInclude Include="User\include\Wall.h" />

@@ -2,6 +2,7 @@
 
 #include "../../Engine/include/Object.h"
 #include "../../Engine/include/Tools.h"
+#include "../../Engine/include/Input.h"
 
 class Player : public Object
 {
@@ -14,7 +15,8 @@ public:
 	void OnCollision(Object* other) override;
 
 private:
-
+	
+	Input* input_;
 	
 	bool is_input_;
 	FPosition prev_position_{0,0};
@@ -22,5 +24,12 @@ private:
 	void move();
 
 	void jump(int i);
-	
+
+	void attack();
+
+	void up();
+	void down();
+	void left();
+	void right();
+	int attack_cnt_;
 };

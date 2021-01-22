@@ -75,6 +75,9 @@
     <ClCompile Include="Engine\src\Input.cpp">
       <Filter>Source\Engine\Src</Filter>
     </ClCompile>
+    <ClCompile Include="ProjectSetting.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h">

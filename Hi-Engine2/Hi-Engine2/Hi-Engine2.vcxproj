@@ -153,6 +153,7 @@
     <ClCompile Include="Engine\src\Unit.cpp" />
     <ClCompile Include="Engine\src\WorldOutliner.cpp" />
     <ClCompile Include="Hi-Engine2.cpp" />
+    <ClCompile Include="ProjectSetting.cpp" />
     <ClCompile Include="User\src\Player.cpp" />
     <ClCompile Include="User\src\TestScene.cpp" />
     <ClCompile Include="User\src\Wall.cpp" />

@@ -27,5 +27,9 @@ private:
 
 	void attack();
 
+	void up();
+	void down();
+	void left();
+	void right();
 	int attack_cnt_;
 };

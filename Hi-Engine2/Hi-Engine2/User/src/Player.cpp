@@ -20,7 +20,18 @@ Player::Player(const FPosition& p, const std::string& name, const std::string& s
 		this->attack();
 	});
 
-	
+	input_->BindAction("Up", EInputEvent::IE_Pressed, this, [=]() {
+		this->up();
+	});
+	input_->BindAction("Down", EInputEvent::IE_Pressed, this, [=]() {
+		this->down();
+	});
+	input_->BindAction("Left", EInputEvent::IE_Pressed, this, [=]() {
+		this->left();
+	});
+	input_->BindAction("Right", EInputEvent::IE_Pressed, this, [=]() {
+		this->right();
+	});
 
 	attack_cnt_ = 0;
 }
@@ -73,7 +84,24 @@ void Player::jump(int i)
 void Player::attack()
 {
 	attack_cnt_++;
+}
 
+void Player::up()
+{
+	control(UP);
+}
+
+void Player::down()
+{
+	control(DOWN);
+}
+
+void Player::left()
+{
+	control(LEFT);
+}
+
+void Player::right()
+{
 	control(RIGHT);
-
 }

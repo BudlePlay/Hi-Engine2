@@ -3,13 +3,14 @@
 #include "../../Engine/include/WorldOutliner.h"
 
 Bullet::Bullet(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area,
-               const std::string& direction, const std::string& Type, const FPosition forward): Object(p, name, shape, Area, direction, Type)
+               const std::string& direction, const std::string& Type, const FPosition forward): Object(p, name, shape, Area, Type)
 {
 	this->forward_ = forward;
 }
 
 Bullet::~Bullet()
 {
+	std::cout << "dd";
 }
 
 void Bullet::Work()

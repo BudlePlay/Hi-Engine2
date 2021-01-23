@@ -15,8 +15,7 @@ void TestScene::Create()
 {
 	Map_Make();
 
-	worldOutliner.AddObject(new Player({ 1,1 }, "Player", "aa", { 1,1 },
-		"", "Actor"));
+	worldOutliner.AddObject(new Player({ 1,1 }, "Player", "aa", { 1,1 }, "Actor"));
 }
 
 void TestScene::Render(float dt)

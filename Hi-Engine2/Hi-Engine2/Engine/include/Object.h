@@ -12,7 +12,6 @@ protected:
 	std::string Type;
 	FPosition position{0,0};
 	Area area{0,0};
-	std::string Direction;
 	
 	float Speed = 0.2;
 	FPosition Up = { 0, Speed };
@@ -21,9 +20,9 @@ protected:
 	FPosition Right = { Speed, 0 };
 	
 public:
-	virtual ~Object() = default;
+	virtual ~Object();
 
-	Object(FPosition p, std::string name, std::string shape, Area Area, std::string direction, std::string Type);
+	Object(FPosition p, std::string name, std::string shape, Area Area, std::string Type);
 
 
 	std::string GetName();
@@ -37,10 +36,6 @@ public:
 	std::string GetShape();
 
 	void SetShape(std::string shape);
-
-	std::string getDirection();
-
-	void setDirection(std::string D);
 
 	std::string getType();
 

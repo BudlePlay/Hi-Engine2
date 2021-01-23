@@ -9,8 +9,7 @@
 #include "../../Engine/include/WorldOutliner.h"
 #include "../include/Bullet.h"
 
-Player::Player(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area,
-               const std::string& direction, const std::string& Type): Object(p, name, shape, Area, direction, Type)
+Player::Player(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area, const std::string& Type): Object(p, name, shape, Area, Type)
 {
 	input_ = new Input();
 	

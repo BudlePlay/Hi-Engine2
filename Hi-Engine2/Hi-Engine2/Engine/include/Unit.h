@@ -12,6 +12,7 @@ struct FPosition
 {
 	float x; //1
 	float y;//2 
+	FPosition() : x(0), y(0) {}
 	FPosition(float x_, float y_) : x(x_), y(y_) {}
 
 	FPosition& operator=(const FPosition& a) // a.x \ 3, a.y =4

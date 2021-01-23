@@ -6,6 +6,9 @@
 
 #include <conio.h>
 
+#include "../../Engine/include/WorldOutliner.h"
+#include "../include/Bullet.h"
+
 Player::Player(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area,
                const std::string& direction, const std::string& Type): Object(p, name, shape, Area, direction, Type)
 {
@@ -84,6 +87,9 @@ void Player::jump(int i)
 void Player::attack()
 {
 	attack_cnt_++;
+
+	FPosition pos = GetPosition() + FPosition(1, 0);
+	WorldOutliner::AddObject(new Bullet(pos, "bullet", "bt", { 1,1 }, "", "bullet", {0.1,0}));
 }
 
 void Player::up()

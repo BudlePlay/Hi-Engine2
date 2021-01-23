@@ -21,7 +21,8 @@ protected:
 	FPosition Right = { Speed, 0 };
 	
 public:
-	
+	virtual ~Object() = default;
+
 	Object(FPosition p, std::string name, std::string shape, Area Area, std::string direction, std::string Type);
 
 

@@ -78,6 +78,9 @@
     <ClCompile Include="ProjectSetting.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="User\src\Bullet.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h">
@@ -124,6 +127,9 @@
     </ClInclude>
     <ClInclude Include="ProjectSetting.h">
       <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\Bullet.h">
+      <Filter>Source\User\Include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

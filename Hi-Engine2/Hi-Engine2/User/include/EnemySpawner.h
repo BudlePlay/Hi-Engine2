@@ -1,8 +1,7 @@
 #pragma once
-#include <time.h>
-#include <random>
 
 #include "../../Engine/include/Object.h"
+#include "../../Engine/include/Tools.h"
 
 class EnemySpawner : public Object
 {
@@ -19,5 +18,6 @@ private:
 	int uptimer_ = 0;
 	int enemy_y_ = 1;
 
+	RandomInt random_int_;
 };
 

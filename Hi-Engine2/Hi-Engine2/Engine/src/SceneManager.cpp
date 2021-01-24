@@ -2,7 +2,6 @@
 
 SceneManager::SceneManager()
 {
-	worldOutliner = WorldOutliner();
 }
 
 void SceneManager::Create()
@@ -48,10 +47,7 @@ void SceneManager::UploadMap(std::vector<Object*> obs)
 	}
 }
 
-WorldOutliner SceneManager::getWorldOutliner()
-{
-	return worldOutliner;
-}
+
 
 void SceneManager::SceneChange(SceneManager* scene)
 {

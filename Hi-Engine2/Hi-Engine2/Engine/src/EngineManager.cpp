@@ -52,9 +52,9 @@ void EngineManager::Game()
 
 void EngineManager::BoomCheck()
 {
-	for (auto my : scene->worldOutliner.GetObjects())
+	for (auto my : WorldOutliner::GetObjects())
 	{
-		for (auto other : scene->worldOutliner.GetObjects())
+		for (auto other : WorldOutliner::GetObjects())
 		{
 			if (my != other)
 			{
@@ -79,7 +79,7 @@ void EngineManager::BoomCheck()
 void EngineManager::Work()
 {
 	//Work
-	for (auto o : scene->worldOutliner.GetObjects())
+	for (auto o : WorldOutliner::GetObjects())
 	{
 		o->Work();
 	}
@@ -87,7 +87,7 @@ void EngineManager::Work()
 
 void EngineManager::Print_Map()
 {
-	scene->SceneManager::UploadMap(scene->worldOutliner.GetObjects());
+	scene->SceneManager::UploadMap(WorldOutliner::GetObjects());
 
 	std::vector<Position> v = scene->mapPointer->ModifiedMap();
 	for (Position i : v)

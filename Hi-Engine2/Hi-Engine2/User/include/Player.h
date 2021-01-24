@@ -14,6 +14,7 @@ public:
 	
 	void OnCollision(Object* other) override;
 
+	void up_hp(int increase);
 private:
 	
 	Input* input_;

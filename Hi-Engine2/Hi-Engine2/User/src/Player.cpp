@@ -37,7 +37,7 @@ Player::Player(const FPosition& p, const std::string& name, const std::string& s
 
 	attack_cnt_ = 0;
 
-	hp_bar_ = new HpBar({ 1,1 }, "HpBar", "hh", { 10,1 }, "Widget");
+	hp_bar_ = new HpBar({ 1,0 }, "HpBar", "hp", { 10,1 }, "Widget");
 	WorldOutliner::AddObject(hp_bar_);
 
 	hp_ = 10;
@@ -54,6 +54,11 @@ void Player::Work()
 void Player::OnCollision(Object* other)
 {
 	position = prev_position_;
+}
+
+void Player::up_hp(int increase)
+{
+	hp_ += increase;
 }
 
 void Player::control(PLAYER_INPUT player_input_)

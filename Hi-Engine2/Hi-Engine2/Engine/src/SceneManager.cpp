@@ -1,5 +1,7 @@
 #include "../include/SceneManager.h"
 
+SceneManager* SceneManager::nextScene = nullptr;
+
 SceneManager::SceneManager()
 {
 }

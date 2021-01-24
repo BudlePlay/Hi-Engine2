@@ -6,8 +6,13 @@
 
 #include <conio.h>
 
+
+
+#include "../../Engine/include/BasicScene.h"
+#include "../../Engine/include/SceneManager.h"
 #include "../../Engine/include/WorldOutliner.h"
 #include "../include/Bullet.h"
+#include "../include/TestScene.h"
 
 Player::Player(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area, const std::string& Type): Object(p, name, shape, Area, Type)
 {
@@ -48,6 +53,11 @@ void Player::Work()
 	(*input_)();
 	int data = IORaspberryPi::get_joy();
 	int pressed_key;
+
+	if(hp_> 15)
+	{
+		SceneManager::nextScene = new BasicScene();
+	}
 
 }
 

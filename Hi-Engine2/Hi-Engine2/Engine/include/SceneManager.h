@@ -13,7 +13,7 @@ class SceneManager
 {
 protected:
 public:
-	SceneManager* nextScene;
+	static SceneManager* nextScene;
 	Map* mapPointer;
 
 	int X_SIZE = 0;

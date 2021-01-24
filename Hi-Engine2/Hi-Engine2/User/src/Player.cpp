@@ -88,7 +88,7 @@ void Player::attack()
 	attack_cnt_++;
 
 	FPosition pos = GetPosition() + FPosition(1, 0);
-	WorldOutliner::AddObject(new Bullet(pos, "bullet", "bt", { 1,1 }, "", "bullet", {0.1,0}));
+	WorldOutliner::AddObject(new Bullet(pos, "bullet", "bt", { 1,1 }, "", "bullet", {1,0}, 0.1f));
 }
 
 void Player::up()

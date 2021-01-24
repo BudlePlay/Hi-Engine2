@@ -3,8 +3,9 @@
 #include "../../Engine/include/WorldOutliner.h"
 
 Bullet::Bullet(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area,
-               const std::string& direction, const std::string& Type, const FPosition forward): Object(p, name, shape, Area, Type)
+               const std::string& direction, const std::string& Type, const FPosition forward, const float speed): Object(p, name, shape, Area, Type)
 {
+	this->speed = speed;
 	this->forward_ = forward;
 }
 
@@ -15,7 +16,7 @@ Bullet::~Bullet()
 
 void Bullet::Work()
 {
-	Translate(forward_);
+	Translate(forward_ * speed);
 }
 
 void Bullet::OnCollision(Object* other)

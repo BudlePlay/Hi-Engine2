@@ -87,6 +87,9 @@
     <ClCompile Include="User\src\EnemySpawner.cpp">
       <Filter>Source\User\Src</Filter>
     </ClCompile>
+    <ClCompile Include="User\src\HpBar.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h">
@@ -141,6 +144,9 @@
       <Filter>Source\User\Include</Filter>
     </ClInclude>
     <ClInclude Include="User\include\EnemySpawner.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\HpBar.h">
       <Filter>Source\User\Include</Filter>
     </ClInclude>
   </ItemGroup>

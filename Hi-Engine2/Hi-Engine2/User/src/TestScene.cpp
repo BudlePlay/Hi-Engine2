@@ -8,8 +8,8 @@
 
 TestScene::TestScene(): SceneManager()
 {
-	X_SIZE = 32;		//21 �Ӱ谪
-	Y_SIZE = 16;		//16 
+	X_SIZE = 32;
+	Y_SIZE = 16;
 	mapPointer = new Map(X_SIZE, Y_SIZE);
 }
 
@@ -18,7 +18,7 @@ void TestScene::Create()
 	Map_Make();
 
 	WorldOutliner::AddObject(new Player({ 1,1 }, "Player", "aa", { 1,1 }, "Character"));
-	WorldOutliner::AddObject(new EnemySpawner({ 20,5 }, "Spawner", "", { 1,1 }, "Actor"));
+	WorldOutliner::AddObject(new EnemySpawner({ 30,5 }, "Spawner", "", { 1,1 }, "Actor"));
 
 }
 

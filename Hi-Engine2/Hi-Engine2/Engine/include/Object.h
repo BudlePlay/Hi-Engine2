@@ -12,7 +12,9 @@ protected:
 	std::string Type;
 	FPosition position{0,0};
 	Area area{0,0};
+
 	
+protected:
 	float Speed = 0.2;
 	FPosition Up = { 0, Speed };
 	FPosition Down = { 0, -Speed };
@@ -49,6 +51,8 @@ public:
 	void TryWork();
 
 	Area GetArea();
+	void SetArea(const Area& area);
+
 	virtual void Work();
 	virtual void OnCollision(Object* other);
 };

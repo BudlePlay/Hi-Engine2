@@ -1,12 +1,14 @@
 #include "../include/Bullet.h"
 
 #include "../../Engine/include/WorldOutliner.h"
+#include "../include/Enemy.h"
 
 Bullet::Bullet(const FPosition& p, const std::string& name, const std::string& shape, const Area& Area,
-               const std::string& direction, const std::string& Type, const FPosition forward, const float speed): Object(p, name, shape, Area, Type)
+               const std::string& direction, const std::string& Type, const FPosition forward, const float speed, Object* instigator): Object(p, name, shape, Area, Type)
 {
 	this->speed = speed;
 	this->forward_ = forward;
+	this->instigator_ = instigator;
 }
 
 Bullet::~Bullet()
@@ -21,6 +23,9 @@ void Bullet::Work()
 
 void Bullet::OnCollision(Object* other)
 {
+	if(dynamic_cast<Enemy*>(other))
+	{
+		WorldOutliner::Destroy(other);
+	}
 	WorldOutliner::Destroy(this);
-
 }

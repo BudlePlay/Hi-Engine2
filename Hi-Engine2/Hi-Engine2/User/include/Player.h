@@ -3,6 +3,7 @@
 #include "../../Engine/include/Object.h"
 #include "../../Engine/include/Tools.h"
 #include "../../Engine/include/Input.h"
+#include "HpBar.h"
 
 class Player : public Object
 {
@@ -31,4 +32,7 @@ private:
 	void left();
 	void right();
 	int attack_cnt_;
+
+	HpBar* hp_bar_;
+	int hp_;
 };

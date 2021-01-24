@@ -19,7 +19,7 @@ void EnemySpawner::Work()
 	uptimer_++;
 
 	float x = GetPosition().x - 1;
-	float y = enemy_y_ % 5 + 2;
+	float y = enemy_y_ % 10 + 2;
 	if(uptimer_ > spawntime_)
 	{
 		WorldOutliner::AddObject(new Enemy({ x,y }, "Enemy", "ee", { 1,1 }, "Character"));

@@ -1,6 +1,7 @@
 #include "../include/Object.h"
 
 
+
 Object::~Object()
 {
 	name.clear();
@@ -86,6 +87,11 @@ void Object::TryWork()
 Area Object::GetArea()
 {
 	return area;
+}
+
+void Object::SetArea(const Area& area)
+{
+	this->area = area;
 }
 
 void Object::Work()

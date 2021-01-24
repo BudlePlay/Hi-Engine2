@@ -15,7 +15,7 @@ public:
 	void OnCollision(Object* other) override;
 
 private:
-	int spawntime_ = 5000;
+	int spawntime_ = 2000;
 	int uptimer_ = 0;
 	int enemy_y_ = 1;
 

@@ -1,6 +1,8 @@
 #include "../include/TestScene.h"
 
 
+
+#include "../include/EnemySpawner.h"
 #include "../include/Player.h"
 #include "../include/Wall.h"
 
@@ -15,7 +17,9 @@ void TestScene::Create()
 {
 	Map_Make();
 
-	worldOutliner.AddObject(new Player({ 1,1 }, "Player", "aa", { 1,1 }, "Actor"));
+	WorldOutliner::AddObject(new Player({ 1,1 }, "Player", "aa", { 1,1 }, "Character"));
+	WorldOutliner::AddObject(new EnemySpawner({ 20,5 }, "Spawner", "", { 1,1 }, "Actor"));
+
 }
 
 void TestScene::Render(float dt)
@@ -41,15 +45,14 @@ TestScene::~TestScene()
 
 void TestScene::Map_Make()
 {
-	worldOutliner.AddObject(new Wall(FPosition({0, 0}), "Wall_Top", "бс", Area({X_SIZE, 1}), "Wall"));
-	worldOutliner.AddObject(new Wall(FPosition({ 0, float(Y_SIZE) - 1 }), "Wall_Bottom", "бс", Area({ X_SIZE, 1 }), "Wall"));
-	
-	worldOutliner.AddObject(new Wall(FPosition({0, 0}), "Wall_Left", "бс", Area({1, Y_SIZE}), "Wall"));
-	worldOutliner.AddObject(new Wall(FPosition({float(X_SIZE) - 1, 0}), "Wall_Right", "бс", Area({1, Y_SIZE}), "Wall"));	
-	
+	WorldOutliner::AddObject(new Wall(FPosition({0, 0}), "Wall_Top", "бс", Area({X_SIZE, 1}), "Wall"));
+	WorldOutliner::AddObject(new Wall(FPosition({ 0, float(Y_SIZE) - 1 }), "Wall_Bottom", "бс", Area({ X_SIZE, 1 }), "Wall"));
+
+	WorldOutliner::AddObject(new Wall(FPosition({0, 0}), "Wall_Left", "бс", Area({1, Y_SIZE}), "Wall"));
+	WorldOutliner::AddObject(new Wall(FPosition({float(X_SIZE) - 1, 0}), "Wall_Right", "бс", Area({1, Y_SIZE}), "Wall"));	
 }
 
 std::string TestScene::getW()
 {
-	return worldOutliner.FindObject("Player")->GetShape();
+	return WorldOutliner::FindObject("Player")->GetShape();
 }

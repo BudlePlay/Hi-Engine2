@@ -81,6 +81,12 @@
     <ClCompile Include="User\src\Bullet.cpp">
       <Filter>Source\User\Src</Filter>
     </ClCompile>
+    <ClCompile Include="User\src\Enemy.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="User\src\EnemySpawner.cpp">
+      <Filter>Source\User\Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\include\BasicScene.h">
@@ -129,6 +135,12 @@
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="User\include\Bullet.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\Enemy.h">
+      <Filter>Source\User\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="User\include\EnemySpawner.h">
       <Filter>Source\User\Include</Filter>
     </ClInclude>
   </ItemGroup>

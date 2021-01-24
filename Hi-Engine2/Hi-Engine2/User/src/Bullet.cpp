@@ -22,4 +22,5 @@ void Bullet::Work()
 void Bullet::OnCollision(Object* other)
 {
 	WorldOutliner::Destroy(this);
+
 }

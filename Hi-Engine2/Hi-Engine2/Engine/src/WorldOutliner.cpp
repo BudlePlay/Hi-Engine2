@@ -4,6 +4,7 @@
 
 void WorldOutliner::AddObject(Object* o)
 {
+	o->BeginPlay();
 	objects.push_back(o);
 }
 

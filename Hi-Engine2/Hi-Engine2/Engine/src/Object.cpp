@@ -103,3 +103,7 @@ void Object::Work()
 void Object::OnCollision(Object* other)
 {
 }
+
+void Object::BeginPlay()
+{
+}

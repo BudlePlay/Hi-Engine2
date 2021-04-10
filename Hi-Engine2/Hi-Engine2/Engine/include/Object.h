@@ -55,4 +55,5 @@ public:
 
 	virtual void Work();
 	virtual void OnCollision(Object* other);
+	virtual void BeginPlay();
 };

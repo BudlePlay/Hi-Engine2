@@ -46,10 +46,6 @@ Player::Player(const FPosition& p, const std::string& name, const std::string& s
 
 	attack_cnt_ = 0;
 
-	hp_bar_ = new HpBar({ 1,0 }, "HpBar", "Hp", { 10,1 }, "Widget");
-	WorldOutliner::AddObject(hp_bar_);
-
-	hp_ = 0;
 }
 
 void Player::Work()
@@ -74,6 +70,14 @@ void Player::up_hp(int increase)
 {
 	hp_ += increase;
 	hp_bar_->SetArea({ hp_,1 });
+}
+
+void Player::BeginPlay()
+{
+	hp_bar_ = new HpBar({ 1,0 }, "HpBar", "Hp", { 10,1 }, "Widget");
+	WorldOutliner::AddObject(hp_bar_);
+
+	hp_ = 0;
 }
 
 void Player::control(PLAYER_INPUT player_input_)

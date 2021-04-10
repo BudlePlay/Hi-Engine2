@@ -15,6 +15,8 @@ public:
 	void OnCollision(Object* other) override;
 
 	void up_hp(int increase);
+
+	void BeginPlay() override;
 private:
 	
 	Input* input_;

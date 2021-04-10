@@ -14,6 +14,7 @@ public:
 		m['s'] = "Down";
 		m['a'] = "Left";
 		m['d'] = "Right";
+		m['m'] = "Menu";
 		m[' '] = "Attack";
 		return m;
 	}

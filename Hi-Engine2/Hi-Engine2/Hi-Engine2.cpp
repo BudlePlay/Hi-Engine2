@@ -1,4 +1,5 @@
 ﻿#include "Engine/include/EngineManager.h"
+#include "Engine/include/BasicScene.h"
 #include "User/include/TestScene.h"
 
 

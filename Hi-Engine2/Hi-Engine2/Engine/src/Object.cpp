@@ -96,6 +96,8 @@ void Object::SetArea(const Area& area)
 
 void Object::Work()
 {
+
+	
 }
 
 void Object::OnCollision(Object* other)

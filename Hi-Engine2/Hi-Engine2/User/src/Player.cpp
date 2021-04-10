@@ -40,6 +40,9 @@ Player::Player(const FPosition& p, const std::string& name, const std::string& s
 	input_->BindAction("Right", EInputEvent::IE_Pressed, this, [=]() {
 		this->right();
 	});
+	input_->BindAction("Menu", EInputEvent::IE_Pressed, this, [=]() {
+		this->menu();
+	});
 
 	attack_cnt_ = 0;
 
@@ -141,4 +144,9 @@ void Player::left()
 void Player::right()
 {
 	control(RIGHT);
+}
+
+void Player::menu()
+{
+	SceneManager::nextScene = new BasicScene();
 }

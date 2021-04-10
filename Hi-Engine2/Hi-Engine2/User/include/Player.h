@@ -36,4 +36,6 @@ private:
 
 	HpBar* hp_bar_;
 	int hp_;
+
+	void menu();
 };
